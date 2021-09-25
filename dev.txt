@@ -31,6 +31,7 @@ Upgrades
     name:Click
     desc:Adds a click, per click. Makes sense, right?
     passive:increase strawberry get of strawButton by 1
+    cost:100 strawberry
   
 Resources
   *strawberry
