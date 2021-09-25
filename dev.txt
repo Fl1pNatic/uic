@@ -1,0 +1,21 @@
+// Dev versions here. Docs are here - http://orteil.dashnet.org/igm/help.html
+Let's make a game!
+  name: Strawberry Clicker
+  desc: A game about strawberrys, because strawberrys are tasty
+  created: 25/09/2021
+  version: Alpha v1
+  
+Layout
+  use default
+  
+Resources
+  *strawberry
+    name: Strawberry
+    desc: The thing that this game is all about
+    show earned
+    
+Buttons
+  *strawButton
+    name: Straw
+    desc: Click on it to get the strawberries
+    on click:yield 1 strawberry
