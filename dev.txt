@@ -17,12 +17,7 @@ Layout
   *main
     contains:Resources, Buttons, Log
     header:<b>Strawberries</b>
-    class:fullWidth
-    *achievs
-      in:main
-      contains:Achievements
   *store
-    class:fullWidth
     contains:BulkDisplay, Upgrades, Buildings
     header:Store
   
