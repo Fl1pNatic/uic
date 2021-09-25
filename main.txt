@@ -4,6 +4,9 @@ Let's make a game!
   created: 25/09/2021
   version: Alpha v1
   
+Layout
+  use default
+  
 Resources
   *strawberry
     name: Strawberry
@@ -14,4 +17,4 @@ Buttons
   *strawButton
     name: Straw
     desc: Click on it to get the strawberries
-    on click: yield 1 strawberry
+    on click:yield 1 strawberry
