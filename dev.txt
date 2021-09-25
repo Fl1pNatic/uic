@@ -22,6 +22,7 @@ Layout
       in:main
       contains:Achievements
   *store
+    class:fullWidth
     contains:BulkDisplay, Upgrades, Buildings
     header:Store
   
