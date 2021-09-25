@@ -5,16 +5,23 @@ Let's make a game!
   created: 25/09/2021
   version: Alpha v1
   
-Layout
-  *resources
+*main
+  contains:res, buttons
+  *res
     contains:Resources
-    header:These are your resources.
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
   *buildings
-    contains:Buildings
-    header:These are things you can build.
+    contains:BulkDisplay, Buildings
+    header:Buildings
     tooltip origin:left
-  *unlockables
-    contains:Upgrades, Achievements
+  *upgrades
+    contains:Upgrades
+    header:Upgrades
+    costs:hide
     names:hide
   
 Resources
@@ -27,6 +34,6 @@ CSS
   font-family: Arial, Helvetica, sans-serif
 Buttons
   *strawButton
-    name: strawberry
+    name: Click
     desc: Click on it to get the strawberries
     on click:yield 1 strawberry
