@@ -36,12 +36,12 @@ Buttons
 Buildings
   *hand
     name:Hand
-    desc:Just a hand that collects strawberries
+    desc:Just a hand that collects strawberries </> 
     on tick:yield 0.25 strawberry
     cost:15 strawberry
   *robo
     name:Robo-collector
-    desc:An awesome robot that collects strawberries for the lazy humans, a handful of strawberries
+    desc:An awesome robot that collects strawberries for the lazy humans, a handful of strawberries </> <q>Beep boop</q>
     on tick:yield 10 strawberry
     cost:10000 strawberry
     req:5000 strawberry:earned
@@ -49,10 +49,13 @@ Buildings
 Upgrades
   *clicky
     name:2 hands
-    desc:Two hands is better than one, right? 
+    desc:Two hands is better than one, right? </> Makes hands twice as effective </> <q>Need a hand?</q>
     passive:multiply strawberry yield of hand by 2
-    cost:100 strawberry
+    cost:50 strawberry
     req:25 strawberries:earned
   *cassette
     name:Cassete
-    desc:
+    desc:Jamming to a music is cool. Even if there is no music. </> Makes clicking twice as effective </> <q>Son, are you ok?</q>
+    passive:multiply strawberry yield of strawButton by 2
+    cost:150 strawberry
+    req:100 strawberries:earned
