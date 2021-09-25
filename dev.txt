@@ -3,7 +3,7 @@ Let's make a game!
   name:Strawberry Clicker
   desc:A game about strawberrys, because strawberrys are tasty
   created:25/09/2021
-  version:Alpha v1
+  version:Alpha v1.1
   author: the h guy
 
 Settings
@@ -32,7 +32,6 @@ Buttons
     name: Click
     desc:Click on it to get the strawberries
     on click:yield 1 strawberry
-    no text
     
 Buildings
   *hand
