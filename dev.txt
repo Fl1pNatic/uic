@@ -1,9 +1,10 @@
 // Dev versions here. Docs are here - http://orteil.dashnet.org/igm/help.html
 Let's make a game!
-  name: Strawberry Clicker
-  desc: A game about strawberrys, because strawberrys are tasty
-  created: 25/09/2021
-  version: Alpha v1
+  name:Strawberry Clicker
+  desc:A game about strawberrys, because strawberrys are tasty
+  created:25/09/2021
+  version:Alpha v1
+  author: the h guy
 
 Layout
   *main
@@ -16,15 +17,15 @@ Layout
   
 Buildings
   *hand
-    name: Hand
-    desc: Just a hand that collects 1 strawberry each 2 seconds
+    name:Hand
+    desc:Just a hand that collects 1 strawberry each 2 seconds
     on tick:yield 0.25 strawberry
-    cost: 15 strawberry
+    cost:15 strawberry
   
 Resources
   *strawberry
-    name: Strawberry
-    desc: The thing that this game is all about
+    name:Strawberry
+    desc:The thing that this game is all about
     show earned
     
 CSS
@@ -32,6 +33,5 @@ CSS
   
 Buttons
   *strawButton
-    name: Click
-    desc: Click on it to get the strawberries
+    desc:Click on it to get the strawberries
     on click:yield 1 strawberry
