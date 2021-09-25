@@ -12,7 +12,7 @@ Settings
 
 Layout
   *main
-    contains:Resources, Buttons
+    contains:Resources, Buttons, Logs
     header:"<b>Strawberries</b>"
   *store
     contains:BulkDisplay, Buildings, Upgrades
@@ -25,6 +25,12 @@ Buildings
     desc:Just a hand that collects 1 strawberry each 2 seconds
     on tick:get 0.25 strawberry
     cost:15 strawberry
+    
+Upgrades
+  *clicky
+    name:Click
+    desc:Adds a click, per click. Makes sense, right?
+    passive:increase get strawButton by 1
   
 Resources
   *strawberry
@@ -39,4 +45,7 @@ Buttons
   *strawButton
     name: Click
     desc:Click on it to get the strawberries
-    on click:get 1 strawberry, Toast Click!
+    on click:
+      get 1 strawberry
+      log Click
+    end
