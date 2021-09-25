@@ -1,20 +1,48 @@
+// If you want to contribute - Edit the dev.txt instead. This one is for the stable version.
 Let's make a game!
-  name: Strawberry Clicker
-  desc: A game about strawberrys, because strawberrys are tasty
-  created: 25/09/2021
-  version: Alpha v1
+  name:Strawberry Clicker
+  desc:A game about strawberrys, because strawberrys are tasty
+  created:25/09/2021
+  version:Alpha v1.1
+  author: the h guy
+
+Settings
+  building cost increase:125%
   
+CSS
+  font-family: Arial, Helvetica, sans-serif
+  
+
 Layout
-  use default
+  *main
+    contains:Resources, Buttons, Log
+    header:"<b>Strawberries</b>"
+  *store
+    contains:BulkDisplay, Buildings, Upgrades
+    header:<b>Store</b>
   
 Resources
-  *strawberry
-    name: Strawberry
-    desc: The thing that this game is all about
+  *strawberry|strawberries
+    name:Strawberry
+    desc:The thing that this game is all about
     show earned
-    
+  
 Buttons
   *strawButton
-    name: Straw
-    desc: Click on it to get the strawberries
+    name: Click
+    desc:Click on it to get the strawberries
     on click:yield 1 strawberry
+    
+Buildings
+  *hand
+    name:Hand
+    desc:Just a hand that collects strawberries
+    on tick:yield 0.25 strawberry
+    cost:15 strawberry
+    
+Upgrades
+  *clicky
+    name:Click
+    desc:Adds a click, per click. Makes sense, right?
+    passive:increase strawberry yield of strawButton by 1
+    cost:100 strawberry
