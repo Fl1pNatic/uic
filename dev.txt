@@ -17,12 +17,16 @@ Layout
   *main
     contains:Resources, Buttons, Log
     header:"<b>Strawberries</b>"
+*store
+  contains:buildings, upgrades
   *buildings
-    contains:Buildings
-    header:<b>Store</b>
-   *upgrades
+    contains:BulkDisplay, Buildings
+    header:Buildings
+    tooltip origin:left
+  *upgrades
     contains:Upgrades
-    header:<b>Upgrades</b>
+    header:Upgrades
+    names:hide
   
 Resources
   *strawberry|strawberries
