@@ -16,15 +16,15 @@ CSS
 Layout
   *main
     contains:Resources, Buttons, Log
-    header:"<b>Strawberries</b>"
+    header:"<t>Strawberries</t>"
   *store
     contains:Buildings, Upgrades
-    header:<b>Store</b>
+    header:<t>Store</t>
   
 Resources
   *strawberry|strawberries
     name:Strawberry
-    desc:The thing that this game is all about
+    desc:The thing that this game is all about </> <q>I think I missed one</q>
     show earned
   
 Buttons
@@ -45,11 +45,6 @@ Buildings
     on tick:yield 10 strawberry
     cost:10000 strawberry
     req:5000 strawberry:earned
-    *test
-      name:<t><#FF0000>Dev's room</t></#>
-      desc:wtf you doin in here
-      on tick:yield 1000 strawberry
-      cost:1 strawberry
     
 Upgrades
   *clicky
