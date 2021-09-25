@@ -16,10 +16,13 @@ CSS
 Layout
   *main
     contains:Resources, Buttons, Log
-    header:"<t>Strawberries</t>"
-  *store
-    contains:Buildings, Upgrades
-    header:<t>Store</t>
+    header:"<b>Strawberries</b>"
+  *buildings
+    contains:Buildings
+    header:<b>Store</b>
+   *upgrades
+    contains:Upgrades
+    header:<b>Upgrades</b>
   
 Resources
   *strawberry|strawberries
