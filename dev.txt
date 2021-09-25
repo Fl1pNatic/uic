@@ -3,7 +3,7 @@ Let's make a game!
   name:Strawberry Clicker
   desc:A game about strawberrys, because strawberrys are tasty
   created:25/09/2021
-  version:Alpha v1.1
+  version:Alpha v1.2
   author: the h guy
 
 Settings
@@ -17,6 +17,7 @@ Layout
   *main
     contains:Resources, Buttons, Log
     header:<b>Strawberries</b>
+    class:fullWidth
     *achievs
       in:main
       contains:Achievements
@@ -69,7 +70,7 @@ Achievements
     desc:You got your first strawberry. It's the beginning of your new journey. </> <q>Should I be proud, or something?...</q>
     req:1 strawberry
     
-  *hand1
+  *1hand
     name:Singular manpower
     desc:Buy a hand from the store </> <q>I think this is illegal...</q>
     req:1 hand
