@@ -6,6 +6,9 @@ Let's make a game!
   version:Alpha v1
   author: the h guy
 
+Settings
+  
+
 Layout
   *main
     contains:Resources, Buttons
@@ -33,5 +36,6 @@ CSS
   
 Buttons
   *strawButton
+    name: Button
     desc:Click on it to get the strawberries
     on click:yield 1 strawberry
