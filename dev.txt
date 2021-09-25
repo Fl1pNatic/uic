@@ -9,6 +9,9 @@ Let's make a game!
 Settings
   building cost increase:125%
   
+CSS
+  font-family: Arial, Helvetica, sans-serif
+  
 
 Layout
   *main
@@ -18,34 +21,29 @@ Layout
     contains:BulkDisplay, Buildings, Upgrades
     header:<b>Store</b>
   
+Resources
+  *strawberry|strawberries
+    name:Strawberry
+    desc:The thing that this game is all about
+    show earned
   
+Buttons
+  *strawButton
+    name: Click
+    desc:Click on it to get the strawberries
+    on click:yield 1 strawberry
+    no text
+    
 Buildings
   *hand
     name:Hand
-    desc:Just a hand that collects 1 strawberry each 2 seconds
-    on tick:get 0.25 strawberry
+    desc:Just a hand that collects strawberries
+    on tick:yield 0.25 strawberry
     cost:15 strawberry
     
 Upgrades
   *clicky
     name:Click
     desc:Adds a click, per click. Makes sense, right?
-    passive:increase strawberry get of strawButton by 1
+    passive:increase strawberry yield of strawButton by 1
     cost:100 strawberry
-    req:10 strawberry:earned
-  
-Resources
-  *strawberry|strawberries
-    name:Strawberry
-    desc:The thing that this game is all about
-    show earned
-    
-CSS
-  font-family: Arial, Helvetica, sans-serif
-  
-Buttons
-  *strawButton
-    name: Click
-    desc:Click on it to get the strawberries
-    on click:get 1 strawberry
-    no text
