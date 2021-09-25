@@ -15,7 +15,7 @@ CSS
 
 Layout
   *main
-    contains:Resources, Buttons, Logs
+    contains:Resources, Buttons, Log
     header:"<b>Strawberries</b>"
   *store
     contains:BulkDisplay, Buildings, Upgrades
