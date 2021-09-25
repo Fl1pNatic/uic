@@ -18,7 +18,7 @@ Layout
     contains:Resources, Buttons, Log
     header:"<b>Strawberries</b>"
   *store
-    contains:BulkDisplay, Buildings, Upgrades
+    contains:Buildings, Upgrades
     header:<b>Store</b>
   
 Resources
@@ -39,10 +39,16 @@ Buildings
     desc:Just a hand that collects strawberries
     on tick:yield 0.25 strawberry
     cost:15 strawberry
+  *robo-collector
+    name:Robo-collector
+    desc:An awesome robot that collects strawberries, a handful of strawberries
+    on tick:yield 10 strawberry
+    cost:10000 strawberry
     
 Upgrades
   *clicky
-    name:Click
-    desc:Adds a click, per click. Makes sense, right?
-    passive:increase strawberry yield of strawButton by 1
+    name:2 hands
+    desc:Two hands is better than one, right? 
+    passive:multiply strawberry yield of hand by 2
     cost:100 strawberry
+    req:25 strawberries:earned
