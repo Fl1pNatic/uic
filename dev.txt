@@ -45,16 +45,19 @@ Buildings
     on tick:yield 10 strawberry
     cost:10000 strawberry
     req:5000 strawberry:earned
-  *test
-    name:Dev's room
-    desc:wtf you doin in here
-    on tick:yield 1000 strawberry
-    cost:1 strawberry
+    *test
+      name:<t><#FF0000>Dev's room</t></#>
+      desc:wtf you doin in here
+      on tick:yield 1000 strawberry
+      cost:1 strawberry
     
 Upgrades
   *clicky
     name:2 hands
     desc:Two hands is better than one, right? 
-    passive:increase strawberry yield of hand by 1
+    passive:multiply strawberry yield of hand by 2
     cost:100 strawberry
     req:25 strawberries:earned
+  *cassette
+    name:Cassete
+    desc:
