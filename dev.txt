@@ -17,11 +17,12 @@ Layout
   *main
     contains:Resources, Buttons, Log
     header:"<b>Strawberries</b>"
-*store
-  contains:buildings, upgrades
+    *achievs
+      in:main
+      contains:Achievements
   *buildings
     contains:BulkDisplay, Buildings
-    header:Buildings
+    header:Store
     tooltip origin:left
   *upgrades
     contains:Upgrades
@@ -36,7 +37,7 @@ Resources
   
 Buttons
   *strawButton
-    name: Click
+    name:Click
     desc:Click on it to get the strawberries
     on click:yield 1 strawberry
     
