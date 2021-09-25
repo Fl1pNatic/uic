@@ -32,9 +32,10 @@ Upgrades
     desc:Adds a click, per click. Makes sense, right?
     passive:increase strawberry get of strawButton by 1
     cost:100 strawberry
+    req:10 strawberry:earned
   
 Resources
-  *strawberry
+  *strawberry|strawberries
     name:Strawberry
     desc:The thing that this game is all about
     show earned
@@ -47,3 +48,4 @@ Buttons
     name: Click
     desc:Click on it to get the strawberries
     on click:get 1 strawberry
+    no text
