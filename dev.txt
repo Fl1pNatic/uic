@@ -54,7 +54,7 @@ Upgrades
     cost:50 strawberry
     req:25 strawberries:earned
   *cassette
-    name:Cassete
+    name:Cassette
     desc:Jamming to a music is cool. Even if there is no music. </> Makes clicking twice as effective </> <q>Son, are you ok?</q>
     passive:multiply strawberry yield of strawButton by 2
     cost:150 strawberry
