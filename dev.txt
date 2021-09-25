@@ -18,7 +18,8 @@ Buildings
   *hand
     name: Hand
     desc: Just a hand that collects 1 strawberry each 2 seconds
-    on tick: yield 0.25 strawberry
+    on tick:yield 0.25 strawberry
+    cost: 15 strawberry
   
 Resources
   *strawberry
