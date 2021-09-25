@@ -41,10 +41,10 @@ Buildings
     cost:15 strawberry
   *robo
     name:Robo-collector
-    desc:An awesome robot that collects strawberries, a handful of strawberries
+    desc:An awesome robot that collects strawberries for the lazy humans, a handful of strawberries
     on tick:yield 10 strawberry
     cost:10000 strawberry
-    req: 5000 strawberries:earned
+    req:5000 strawberry:earned
     
 Upgrades
   *clicky
