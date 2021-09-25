@@ -14,8 +14,10 @@ Resources
     desc: The thing that this game is all about
     show earned
     
+CSS
+  font-family:"Roboto", Roboto, sans-serif
 Buttons
   *strawButton
-    name: Straw
+    name: strawberry
     desc: Click on it to get the strawberries
     on click:yield 1 strawberry
