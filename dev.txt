@@ -24,7 +24,7 @@ Resources
     show earned
     
 CSS
-  font-family:"Roboto", Roboto, sans-serif
+  font-family: Arial, Helvetica, sans-serif
 Buttons
   *strawButton
     name: strawberry
