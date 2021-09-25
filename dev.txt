@@ -12,10 +12,10 @@ Settings
 
 Layout
   *main
-    contains:Resources, Buttons
+    contains:Resources, Buttons, Log
     header:"<b>Strawberries</b>"
   *store
-    contains:Buildings, Upgrades
+    contains:BulkDisplay, Buildings, Upgrades
     header:<b>Store</b>
   
   
@@ -23,7 +23,7 @@ Buildings
   *hand
     name:Hand
     desc:Just a hand that collects 1 strawberry each 2 seconds
-    on tick:yield 0.25 strawberry
+    on tick:get 0.25 strawberry
     cost:15 strawberry
   
 Resources
@@ -37,6 +37,6 @@ CSS
   
 Buttons
   *strawButton
-    name: Button
+    name: Click
     desc:Click on it to get the strawberries
-    on click:yield 1 strawberry
+    on click:get 1 strawberry, log "Click"
