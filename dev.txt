@@ -9,6 +9,8 @@ Layout
   *main
   contains:Resources, Buttons
   header:"<b>Strawberries</b>"
+  *store
+  contains:Buildings, Upgrades
   
 Resources
   *strawberry
