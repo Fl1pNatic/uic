@@ -39,11 +39,12 @@ Buildings
     desc:Just a hand that collects strawberries
     on tick:yield 0.25 strawberry
     cost:15 strawberry
-  *robo-collector
+  *robo
     name:Robo-collector
     desc:An awesome robot that collects strawberries, a handful of strawberries
     on tick:yield 10 strawberry
     cost:10000 strawberry
+    req: 5000 strawberries:earned
     
 Upgrades
   *clicky
