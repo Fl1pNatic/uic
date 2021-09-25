@@ -16,29 +16,24 @@ CSS
 Layout
   *main
     contains:Resources, Buttons, Log
-    header:"<b>Strawberries</b>"
+    header:<b>Strawberries</b>
     *achievs
       in:main
       contains:Achievements
-  *buildings
-    contains:BulkDisplay, Buildings
+  *store
+    contains:BulkDisplay, Upgrades, Buildings
     header:Store
-    tooltip origin:left
-  *upgrades
-    contains:Upgrades
-    header:Upgrades
-    names:hide
   
 Resources
   *strawberry|strawberries
     name:Strawberry
-    desc:The thing that this game is all about </> <q>I think I missed one</q>
+    desc:The thing that this game is all about </> <q>I think I missed one...</q>
     show earned
   
 Buttons
   *strawButton
     name:Click
-    desc:Click on it to get the strawberries
+    desc:Click on it to get the strawberries </> <q>You don't need to explain this to me...</q>
     on click:yield 1 strawberry
     
 Buildings
@@ -49,7 +44,7 @@ Buildings
     cost:15 strawberry
   *robo
     name:Robo-collector
-    desc:An awesome robot that collects strawberries for the lazy humans, a handful of strawberries </> <q>Beep boop</q>
+    desc:An awesome robot that collects strawberries for the lazy humans, a handful of strawberries </> <q>Beep boop...</q>
     on tick:yield 10 strawberry
     cost:10000 strawberry
     req:5000 strawberry:earned
@@ -57,13 +52,24 @@ Buildings
 Upgrades
   *clicky
     name:2 hands
-    desc:Two hands is better than one, right? </> Makes hands twice as effective </> <q>Need a hand?</q>
+    desc:Two hands is better than one, right? </> Makes hands twice as effective </> <q>Need a hand?...</q>
     passive:multiply strawberry yield of hand by 2
     cost:50 strawberry
     req:25 strawberries:earned
   *cassette
     name:Cassette
-    desc:Jamming to a music is cool. Even if there is no music. </> Makes clicking twice as effective </> <q>Son, are you ok?</q>
+    desc:Jamming to a music is cool. Even if there is no music. </> Makes clicking twice as effective </> <q>Son, are you ok?...</q>
     passive:multiply strawberry yield of strawButton by 2
     cost:150 strawberry
     req:100 strawberries:earned
+
+Achievements
+  *1strawberry
+    name:The start.
+    desc:You got your first strawberry. It's the beginning of your new journey. </> <q>Should I be proud, or something?...</q>
+    req:1 strawberry
+    
+  *hand1
+    name:Singular manpower
+    desc:Buy a hand from the store </> <q>I think this is illegal...</q>
+    req:1 hand
