@@ -46,3 +46,5 @@ Upgrades
     desc:Adds a click, per click. Makes sense, right?
     passive:increase strawberry yield of strawButton by 1
     cost:100 strawberry
+    req:100 strawberries
+    hide when have clicky
