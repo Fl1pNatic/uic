@@ -50,6 +50,6 @@ Upgrades
   *clicky
     name:2 hands
     desc:Two hands is better than one, right? 
-    passive:increment strawberry yield of hand by 1
+    passive:increase strawberry yield of hand by 1
     cost:100 strawberry
     req:25 strawberries:earned
