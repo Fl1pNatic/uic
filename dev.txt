@@ -30,7 +30,7 @@ Upgrades
   *clicky
     name:Click
     desc:Adds a click, per click. Makes sense, right?
-    passive:increase get strawButton by 1
+    passive:increase strawberry get of strawButton by 1
   
 Resources
   *strawberry
