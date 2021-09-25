@@ -45,6 +45,11 @@ Buildings
     on tick:yield 10 strawberry
     cost:10000 strawberry
     req:5000 strawberry:earned
+  *test
+    name:Dev's room
+    desc:wtf you doin in here
+    on tick:yield 1000 strawberry
+    cost:1 strawberry
     
 Upgrades
   *clicky
