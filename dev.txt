@@ -4,25 +4,26 @@ Let's make a game!
   desc: A game about strawberrys, because strawberrys are tasty
   created: 25/09/2021
   version: Alpha v1
-  
-*main
-  contains:res, buttons
-  *res
-    contains:Resources
-    class:fullWidth
-  *buttons
-    contains:Buttons
-*store
-  contains:buildings, upgrades
-  *buildings
-    contains:BulkDisplay, Buildings
-    header:Buildings
-    tooltip origin:left
-  *upgrades
-    contains:Upgrades
-    header:Upgrades
-    costs:hide
-    names:hide
+
+Layout
+  *main
+    contains:res, buttons
+    *res
+      contains:Resources
+      class:fullWidth
+    *buttons
+      contains:Buttons
+  *store
+    contains:buildings, upgrades
+    *buildings
+      contains:BulkDisplay, Buildings
+      header:Buildings
+      tooltip origin:left
+    *upgrades
+      contains:Upgrades
+      header:Upgrades
+      costs:hide
+      names:hide
   
 Resources
   *strawberry
@@ -32,6 +33,7 @@ Resources
     
 CSS
   font-family: Arial, Helvetica, sans-serif
+  
 Buttons
   *strawButton
     name: Click
