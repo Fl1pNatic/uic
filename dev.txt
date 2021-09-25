@@ -12,7 +12,7 @@ Settings
 
 Layout
   *main
-    contains:Resources, Buttons, Log
+    contains:Resources, Buttons
     header:"<b>Strawberries</b>"
   *store
     contains:BulkDisplay, Buildings, Upgrades
@@ -39,4 +39,4 @@ Buttons
   *strawButton
     name: Click
     desc:Click on it to get the strawberries
-    on click:get 1 strawberry, log Click
+    on click:get 1 strawberry, Toast Click!
