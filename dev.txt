@@ -7,10 +7,18 @@ Let's make a game!
 
 Layout
   *main
-  contains:Resources, Buttons
-  header:"<b>Strawberries</b>"
+    contains:Resources, Buttons
+    header:"<b>Strawberries</b>"
   *store
-  contains:Buildings, Upgrades
+    contains:Buildings, Upgrades
+    header:<b>Store</b>
+  
+  
+Buildings
+  *hand
+    name: Hand
+    desc: Just a hand that collects 1 strawberry each 2 seconds
+    on tick: yield 0.25 strawberry
   
 Resources
   *strawberry
