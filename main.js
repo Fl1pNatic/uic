@@ -17,21 +17,6 @@ function buyHand(){
     }
 }
 
-function buy2Hand(){
-    twohandCost = Math.floor(200 * Math.pow(1.25,twohand)); 
-    if(strawberries >= twohandCost && twohand == false){
-        strawberries = strawberries - twohandCost
-        twohand = true
-        console.log("Bought 2 Hands!")
-        document.getElementById("twohand").innerHTML = twohand;
-        var ntwohandCost = Math.floor(200 * Math.pow(1.25,twohand));
-        document.getElementById('twohandCost').innerHTML = ntwohandCost;
-    }
-    else{
-        document.getElementById('twohandCost').innerHTML = "Already Bought!"
-    }
-}
-
 
 function addStraw(toGive){
     strawberries = strawberries + toGive
@@ -41,8 +26,12 @@ function addStraw(toGive){
 
 window.setInterval(function(){
 	
-	addStraw(hand + twohand);
-	
+    if(twohand){
+	    addStraw(hand * 2);
+    }
+    if(!twohand){
+	    addStraw(hand);
+    }
 }, 1000);
 
 // A message
