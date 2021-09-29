@@ -3,7 +3,7 @@ var strawberry = strawberries
 // Vars
 var toGive = 1  
 var hand = 0
-var twohand = true
+var twohand = false
 
 function buyHand(){
     handCost = Math.floor(15 * Math.pow(1.25,hand)); 
@@ -14,6 +14,17 @@ function buyHand(){
         document.getElementById("hand").innerHTML = hand;
         var nhandCost = Math.floor(15 * Math.pow(1.25,hand));
         document.getElementById('handCost').innerHTML = nhandCost;
+    }
+}
+
+function buy2Hand(){
+    if(strawberries >= 200 && twohand == false){
+        strawberries = strawberries - 200
+        twohand = true
+        console.log("Bought 2 Hands!")
+        document.getElementById("twohand").innerHTML = twohand;
+        document.getElementById('twohandCost').innerHTML = "Already Bought!"
+        
     }
 }
 
