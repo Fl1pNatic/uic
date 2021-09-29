@@ -1,5 +1,4 @@
 # Strawberry Clicker
-An idle incremental game made with Idle-game Maker (http://orteil.dashnet.org/igm/)
+An idle incremental game
 
-[Play the main version](http://orteil.dashnet.org/igm/?g=https%3A%2F%2Ffl1pnatic.github.io%2Fstrawberry-clicker%2Fmain.txt) <br>
-[Play the dev version](http://orteil.dashnet.org/igm/?g=https%3A%2F%2Ffl1pnatic.github.io%2Fstrawberry-clicker%2Fdev.txt)
+## Old IGM build is here - https://github.com/Fl1pNatic/strawberry-clicker/tree/Igm
