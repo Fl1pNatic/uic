@@ -1,0 +1,17 @@
+body{
+	text-decoration: none;
+}
+.titles{
+	margin-left: 12.5%
+}
+
+.info{
+	margin-left: 85%;
+	position: fixed;
+	top: 1%;
+}
+.titleBut{
+	padding: 0;
+	border: none;
+	background: none;
+}
